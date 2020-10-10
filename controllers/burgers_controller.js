@@ -3,7 +3,7 @@ var router = express.Router();
 var burger = require("../models/burger");
 
 router.get("/", function (req, res) {
-  burger.all(function (data) {
+  burger.selectAll(function (data) {
     var hbsObject = {
       burgers: data,
     };
@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-  burger.create(
+  burger.insertOne(
     ["name", "devoured"],
     [req.body.name, req.body.devoured],
     function (result) {
@@ -28,7 +28,7 @@ router.put("/api/burgers/:id", function (req, res) {
 
   console.log("condition", condition);
 
-  burger.update(
+  burger.updateOne(
     {
       undevoured: req.body.undevoured,
     },
@@ -43,3 +43,4 @@ router.put("/api/burgers/:id", function (req, res) {
     }
   );
 });
+module.exports = router;

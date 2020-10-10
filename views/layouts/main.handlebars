@@ -1,18 +1,18 @@
-<h1>Eat Da Burger!</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<ul>
-    {{#each burgers}}
-    <li>
-        <p>
-            {{this.id}}. {{this.burger_name}}
-            <button data-burgerid="{{this.id}}" class="devour-burger">Devour!!</button>
-        </p>
-    </li>
-    {{/each}}
-</ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/burger_style.css" type="text/css" />
+    <title>Eat Da Burger!</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../public/assets/js/burger.js"></script>
 
-<form id="addburger" class="button-size">
-    <textarea type="text" name="burger"></textarea>
-    <button type="submit">Add Dat Borger!!</button>
-</form>
-<h2>What Burger do you want to eat?!</h2>
+</head>
+
+<body>
+    {{{body}}}
+</body>
+
+</html>
