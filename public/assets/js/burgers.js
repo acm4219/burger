@@ -4,7 +4,7 @@ $(function() {
         event.preventDefault();
     
         var newBurger = {
-          name: $("#yourburger [name=burger_name]").val().trim(),
+          name: $("#yourburger").val().trim(),
         };
     
         // Send the POST request.
