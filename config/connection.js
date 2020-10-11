@@ -3,8 +3,8 @@ const { user, password } = require("./config");
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
-  user: user,
-  password: password,
+  user: "burger_admin",
+  password: "burgerTime",
   database: "burger_db",
 });
 
