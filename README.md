@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# Eat Da Burger
+## Description 
+This application can be utilized to make a delicious list of burgers that you're looking to devour!
 
-You can use the [editor on GitHub](https://github.com/acm4219/burger/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Live Site 
+[Eat Da Burger App!](https://obscure-hamlet-35486.herokuapp.com/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Usage 
+When starting the application you'll be able to enter a burger that you want to eat in the text field. Hitting the Add Dat Burger Button, you add it to your list of burgers that you want to eat. When you finally decide to eat it then you're able to press the devour button and move it over to your devoured list! If you want it again you just need to re-order it.
 
-### Markdown
+## Challenges 
+Unfortunately I was only able to get the base adding piece of the application working, however I am very close to the update portion of it. It is still fully deployed, which took a long time to do as well. I plan on coming back to this and making it full work. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Credits 
+I was able to create what I did from working with our instructor at the bootcamp as well as working with other classmates while using online sources.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/acm4219/burger/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
