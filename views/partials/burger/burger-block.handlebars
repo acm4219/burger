@@ -1,7 +1,7 @@
-<li>
-    {{burger_name}}
+<li class="list-group-item list-group-item-light">
+    <h6 class="mb-1">{{burger_name}}</h6>
 
-    <button class="devour-burger" data-id="{{id}}" data-newdevoured="{{devoured}}">
+    <button type="button" class="devour-burger btn btn-info" data-id="{{id}}" data-newdevoured="{{devoured}}">
         {{#unless devoured}}Order Again?!{{else}}Devour!!{{/unless}}
     </button>
 
