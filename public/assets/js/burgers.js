@@ -19,13 +19,14 @@ $(function() {
           }
         );
       });
-   $(".devour-burger").on("click", function(event) {
+   $(".devour-burger").on("click", function(event) {    
         var id = $(this).data("id");
-        var newDevoured = $(this).data("newDevoured");
+
+        var newDevoured = $(this).data("newdevoured");
     
         var newDevouredState = {
-          devoured: true
-                };
+          devoured: newDevoured
+        };
     
         // Send the PUT request.
         $.ajax("/api/burgers/" + id, {
@@ -33,7 +34,7 @@ $(function() {
           data: newDevouredState
         }).then(
           function() {
-            console.log("Eaten", newDevouredState);
+            console.log("Eaten", newDevoured);
             // Reload the page to get the updated list
             location.reload();
           }
