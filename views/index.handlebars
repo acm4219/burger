@@ -16,9 +16,9 @@
             <h3>Your Order</h3>
             <ul>
                 {{#each burgers}}
-                {{#unless devoured}}
-                {{> burger/burger-block devoured=true}}
-                {{/unless}}
+                {{#if devoured}}
+                {{> burger/burger-block devoured=false}}
+                {{/if}}
                 {{/each}}
             </ul>
         </div>
@@ -26,9 +26,9 @@
             <h3>You've Eaten this!</h3>
             <ul>
                 {{#each burgers}}
-                {{#if devoured}}
-                {{> burger/burger-block devoured=false}}
-                {{/if}}
+                {{#unless devoured}}
+                {{> burger/burger-block devoured=true}}
+                {{/unless}}
                 {{/each}}
             </ul>
         </div>
@@ -42,7 +42,6 @@
         <div class="col-sm text-center">
             <form id="addburger" class="create-form">
                 <textarea type="text" id="yourburger" name="burger"></textarea>
-                <br>
                 <button type="submit" class="devour-burger btn btn-info">Add Dat Borger!!</button>
             </form>
         </div>
